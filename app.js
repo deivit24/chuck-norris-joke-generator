@@ -1,6 +1,7 @@
 document.querySelector('#get-jokes').addEventListener('click', getJokes);
 
 function getJokes(e) {
+  
   const number = document.querySelector('input[type="number"]').value;
 
   const xhr = new XMLHttpRequest();
@@ -15,7 +16,7 @@ function getJokes(e) {
 
       if (response.type === 'success') {
         response.value.forEach(function(jokes) {
-          output += `<li class='list'>${jokes.joke}</li>`
+          output += `<li>${jokes.joke}</li>`
         });
       }else{
         output += '<li>Something Went Wrong';
@@ -25,6 +26,17 @@ function getJokes(e) {
     }
   }
   xhr.send();
+  document.querySelector('.loading').style.display = 'block';
+  document.querySelector('.jokes').style.display = 'none';
 
+  setTimeout(results, 2000);
   e.preventDefault();
+ 
+  
 }
+
+function results() {
+  document.querySelector('.loading').style.display = 'none';
+
+  document.querySelector('.jokes').style.display = 'block';
+};

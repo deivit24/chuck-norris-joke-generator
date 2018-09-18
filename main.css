@@ -28,17 +28,21 @@ label{
 
 }
 
+.jokes{
+  display: none;
+}
+
+
+
 li{
   margin-bottom: 20px;
   font-weight: bold;
   text-align: left;
-  transition: all 1s ease-in;
-  opacity: 0;
-  transform: translateX(-100px);
+  
+  
+  
 }
 
-.list{
-  
-  opacity: 1;
-  transform: translateX(0px);
+.loading{
+  display: none;
 }
