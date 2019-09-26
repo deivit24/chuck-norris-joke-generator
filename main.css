@@ -1,48 +1,47 @@
-body{
+body {
   background-image: url(chuck.png);
 }
-.container{
-  padding:50px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
   text-align: center;
-  margin-top:50px;
-  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  padding: 50px;
+  box-shadow: 0px 0px 13px 5px rgba(68, 68, 68, 0.2);
   background: white;
-  
-  
 }
 
-h1{
+h1 {
   padding: 50px 0px;
 }
 
-label{
+label {
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   padding-bottom: 10px;
 }
 
-#get-jokes{
+#get-jokes {
   margin-top: 50px;
   margin-bottom: 50px;
   list-style-type: none;
-
 }
 
-.jokes{
+.jokes {
   display: none;
 }
 
-
-
-li{
+li {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: left;
-  
-  
-  
 }
 
-.loading{
+.loading {
   display: none;
 }
